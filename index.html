@@ -26,7 +26,7 @@
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolioo">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -124,27 +124,69 @@
             </div>
         </section>
         <!-- Portfolio-->
-        <section id="portfolio">
+        <section id="portfolioo">
                 <div class="container">
-                    <h2 class="text-center mt-0">Portfolio</h2>
-                    <hr class="divider my-4"/>
+                    <h2 class="text-center mt-5">Portfolio</h2>
+<!--                    <hr class="divider my-4"/>-->
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 text-center">
-                            <div class="mt-5">
-                                <i class="fa fa-laptop text-primary icons mb-4"></i>
-                                <h3 class="h4 mb-2">Chatbot</h3>
-                                <p class="text-muted mb-0">An mock Umuzi.org bot helping potential recruits inquire about application related issues</p>
-                                <a href="https://github.com/FaithMo/the-bot">view</a>
+                        <div class=" col-lg-3 col-md-6 text-center">
+                            <div class="mt-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <i class="fa fa-laptop text-primary icons mb-4"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h4 mb-2">Chatbot</h3>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-0">An mock Umuzi.org bot helping potential recruits inquire about application related issues</p>
+                                    <hr class="divider my-4" />
+                                </div>
+                                <div>
+                                    <a  data-toggle="modal" data-target="#Modal2" >view</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="vl"></div>
                         <div class="col-lg-3 col-md-6 text-center">
-                            <div class="mt-5">
-                                <i class="fa fa-heartbeat text-primary icons mb-4"></i>
-                                <h3 class="h4 mb-2">Covid-19 Dashboard</h3>
-                                <p class="text-muted mb-0">
-                                    This dashboard consists of data ranging from the spread
-                                    of the virus in South Africa since the beginning (5 March 2020) to date</p>
-                                <a href="https://datastudio.google.com/u/0/reporting/1Yfvf2t6pwWwKK-9fptoI6W_T3MV8DcqQ/page/wLeKB">view</a>
+                            <div class="mt-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <i class="fa fa-heartbeat text-primary icons mb-4"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h4 mb-2">Covid-19 Dashboard</h3>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-0">
+                                        This dashboard consists of data ranging from the spread
+                                        of the virus globally and in South Africa since the beginning to date</p>
+                                    <p>
+                                    <hr class="divider my-4" />
+                                </div>
+                                <div>
+                                    <a data-toggle="modal" data-target="#Modal1">view</a>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <i class="fas fa-gamepad text-primary icons mb-4"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h4 mb-2">Tile Matching Game</h3>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-0">
+                                        A tile-matching game that manipulates tiles in order to make two
+                                        of them appear on the screen when they match using a
+                                        matching criterion.</p>
+                                    <hr class="divider my-4" />
+                                </div>
+                                <div>
+                                    <a data-toggle="modal" data-target="#Modal3">view</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -198,3 +240,79 @@
     </body>
 </html>
 
+<!-- Modals -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Covid-19 Dashboard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="w-100" src="assets/img/dashboard.PNG">
+            </div>
+            <div class="modal-footer">
+                <p><b>View on: </b></p>
+                <div class="row">
+                    <div><a href="https://datastudio.google.com/u/0/reporting/1Yfvf2t6pwWwKK-9fptoI6W_T3MV8DcqQ/page/wLeKB"
+                    target="_blank">
+                        Google Data Studio</a></div> |
+                    <div>
+                        <a href="https://github.com/Snap-Dashboard-Product-Covid19/covid-19_snap-dash" target="_blank">Github</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="Modal2Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal2Title">Mock Bot</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="w-50" src="assets/img/bot.PNG">
+            </div>
+            <div class="modal-footer">
+                <p><b>View on: </b></p>
+                <div class="row">
+                        <a href="https://github.com/FaithMo/the-bot" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="Modal3Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal3Title">Memory Tile Game</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="w-50" src="assets/img/memory-game.PNG">
+            </div>
+            <div class="modal-footer">
+                <p><b>View on: </b></p>
+                <div class="row">
+                    <a href="https://github.com/FaithMo/memory-game.github.io" target="_blank">Github</a>
+                </div>
+                <div>
+                    <a href="https://faithmo.github.io/memory-game.github.io/">Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

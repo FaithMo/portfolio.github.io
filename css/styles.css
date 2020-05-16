@@ -10136,3 +10136,7 @@ header.masthead h1 {
 .icons {
   font-size: 60px;
 }
+.vl {
+  border-left: 0.5px solid #f40c64;
+  height: 400px;
+}
