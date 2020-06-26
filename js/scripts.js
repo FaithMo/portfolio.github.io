@@ -1,12 +1,26 @@
-/*!
-    * Start Bootstrap - Creative v6.0.1 (https://startbootstrap.com/themes/creative)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
-    */
-    (function($) {
-  "use strict"; // Start of use strict
+var slideIndex = 1;
+showDivs(slideIndex);
 
-  // Smooth scrolling using jQuery easing
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+    (function($) {
+  "use strict"; 
+
+  // Smooth scrolling 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -60,4 +74,4 @@
     }
   });
 
-})(jQuery); // End of use strict
+})(jQuery); 
