@@ -506,6 +506,73 @@ p {
   font-size: 1.05rem;
 }
 
+.ngo-hero {
+  align-items: start;
+}
+
+.impact-ribbon {
+  margin-top: 2rem;
+}
+
+.ngo-hero-card {
+  min-height: 100%;
+}
+
+.area-list {
+  margin-top: 0.8rem;
+}
+
+.mission-grid,
+.collaboration-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.mission-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.conference-card,
+.collaboration-card {
+  background: var(--surface);
+  border: 1px solid rgba(23, 32, 51, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.conference-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem;
+}
+
+.ngo-projects-grid {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.ngo-project-card {
+  min-height: 100%;
+}
+
+.collaboration-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.collaboration-card {
+  padding: 1.4rem;
+  text-decoration: none;
+}
+
+.collaboration-card p {
+  margin: 0.75rem 0 0;
+}
+
+.collaboration-cta {
+  background: linear-gradient(180deg, rgba(255, 214, 191, 0.7), rgba(255, 250, 242, 0.94));
+}
+
 .site-footer {
   padding: 0 0 2rem;
 }
@@ -611,7 +678,9 @@ p {
   .dialog-layout,
   .split-heading,
   .skills-grid,
-  .about-highlights {
+  .about-highlights,
+  .mission-grid,
+  .collaboration-grid {
     grid-template-columns: 1fr;
   }
 
